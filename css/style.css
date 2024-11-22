@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 52px auto;
+}
+
+.pages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+a {
+    font-size: 24px;
+    font-weight: 700;
+    color: #A5A5B4;
+    text-decoration: none;
+}
+
+a.active {
+    color: #FFC700;
+}
+
+.tasks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tasks p {
+    font-size: 24px;
+    font-weight: 900;
+    margin: 67px 0 83px;
+}
+
+.todos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+input[type="checkbox"] {
+    appearance: none; 
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    border: 1px solid #999999;
+    cursor: pointer;
+    position: relative;
+    background-color: #F0F0F0;
+    transition: background-color 0.3s;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #FFC700;
+    border-color: #FFC700;
+}
+
+.title_day {
+    font-size: 24px;
+    font-weight: 600;
+    color: #A5A5B4;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.title_day:nth-last-of-type(1),
+.title_day:nth-last-of-type(2) {
+    margin-top: 105px;
+}
+
+.today, .tomorrow, .later {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.todos_item {
+    width: 629px;
+    height: 123px;
+    border-radius: 15px;
+    background-color: #F0F0F0;
+    padding: 21px 29px;
+    display: flex;
+    align-items: baseline;
+    gap: 13px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #A5A5B4;
+    margin-bottom: 13px;
+}
+
+.day {
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFC700;
+}
+
+.todos-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin-top: 39px;
+}
